@@ -11,7 +11,24 @@ Nosso produto será uma aplicação web que busca atender e facilitar o atendime
 ### Primeira etapa do desenvolvimento:
 Na primeira etapa de desenvolvimento focamos no desenvolvimento de um cátalogo com as categorias de serviços oferecidos e seus respectivos produtos. Dessa forma o cliente poderá acessar a página da aplicação, realizar seu login e verificar o cátalogo de produtos oferecidos.
 
-### Equipe de desenvolvimento:
+## Tecnologias e ferramentas
+
+- Java JDK 17
+- Spring Boot
+- Data JPA
+- Banco de dados H2
+- Spring Boot Starter Web
+- PostgreSQL
+
+## Modelo conceitual
+
+Em desenvolvimento
+
+## Informações de acesso
+
+Em desenvolvimento
+
+## Equipe de desenvolvimento:
 <table>
  <tr>
 <td aling="center"><img src="" alt="drawing" height="100"/><br/>
