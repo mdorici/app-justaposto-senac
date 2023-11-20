@@ -11,6 +11,9 @@ import org.springframework.transaction.annotation.Transactional;
 import com.senac.justaposto.dto.CategoryDTO;
 import com.senac.justaposto.entities.Category;
 import com.senac.justaposto.repositories.CategoryRepository;
+//import com.senac.justaposto.services.exceptions.ResourceNotFoundException;
+
+//import jakarta.persistence.EntityNotFoundException;
 
 @Service
 public class CategoryService {
@@ -30,8 +33,7 @@ public class CategoryService {
 		Optional<Category> obj = repository.findById(id);
 		Category entity = obj.get();
 		
-		return new CategoryDTO(entity);
-		
+		return new CategoryDTO(entity);	
 	}
 
 	@Transactional
@@ -39,8 +41,23 @@ public class CategoryService {
 		Category entity = new Category();
 		entity.setName(dto.getName());
 		entity = repository.save(entity);
-		return new CategoryDTO(entity);
 		
+		return new CategoryDTO(entity);
 	}
+
+	@Transactional
+	public CategoryDTO update(Long id, CategoryDTO dto) {
+		//try {
+			Category entity = repository.getReferenceById(id);
+			entity.setName(dto.getName());
+			entity = repository.save(entity);
+			return new CategoryDTO(entity);
+		//}
+//		catch(EntityNotFoundException e) {
+//			throw new ResourceNotFoundException("Id not found " + id);
+//		}
+			
+	}
+		
 	
 }

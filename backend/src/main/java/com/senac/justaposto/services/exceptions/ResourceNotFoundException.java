@@ -1,6 +1,6 @@
 package com.senac.justaposto.services.exceptions;
 
-public class EntityNotFoundException  {
+public class ResourceNotFoundException  {
 	
 
 }
