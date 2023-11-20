@@ -35,9 +35,9 @@ Em desenvolvimento
 Carla G. F. Bellini<br />
 <a href="" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
 
-<td aling="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/112be4bc-f8b7-4d37-9828-1b8c3e72bea5" alt="drawing" height="100"/><br/>
+<td aling="center"><img src="https://avatars.githubusercontent.com/u/151583448?v=4" alt="drawing" height="100"/><br/>
 Karina Duarte de Oliveira<br />
-<a href="" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
+<a href="https://github.com/karinaduarteo" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
 
  <td aling="center"><img src="https://avatars.githubusercontent.com/u/114058692?v=4" alt="drawing" height="100"/><br/>
 Lana Ariza Obuti<br />
