@@ -31,11 +31,11 @@ Em desenvolvimento
 ## :rocket: Equipe de desenvolvimento:
 <table>
  <tr>
-<td aling="center"><img src="" alt="drawing" height="100"/><br/>
+<td aling="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/112be4bc-f8b7-4d37-9828-1b8c3e72bea5" alt="drawing" height="100"/><br/>
 Carla G. F. Bellini<br />
 <a href="" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
 
-<td aling="center"><img src="" alt="drawing" height="100"/><br/>
+<td aling="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/112be4bc-f8b7-4d37-9828-1b8c3e72bea5" alt="drawing" height="100"/><br/>
 Karina Duarte de Oliveira<br />
 <a href="" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
   </tr>
@@ -58,7 +58,7 @@ Pedro Luan Dórea Melo<br />
 <a href="https://github.com/luandorea" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
   </tr>
   <tr>
-<td aling="center"><img src="" alt="drawing" height="100"/><br/>
+<td aling="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/5b02b63f-c6b9-40f8-af20-8828ebc699b6" alt="drawing" height="100"/><br/>
 Thales R. T. Fernandes<br />
 <a href="" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
  </tr>
