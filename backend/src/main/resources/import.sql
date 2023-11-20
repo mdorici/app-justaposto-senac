@@ -19,4 +19,4 @@ INSERT INTO tb_product (name, price, date, description, img_url) VALUES ('Higien
 INSERT INTO tb_product_category (product_id, category_id) VALUES (1, 1);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (2, 1);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (3, 2);
-INSERT INTO tb_product_category (product_id, category_id) VALUES (3, 2);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (4, 2);
