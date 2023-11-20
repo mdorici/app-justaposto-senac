@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.senac.justaposto.dto.RoleDTO;
 import com.senac.justaposto.dto.UserDTO;
 import com.senac.justaposto.dto.UserInsertDTO;
+import com.senac.justaposto.dto.UserUpdateDTO;
 import com.senac.justaposto.entities.Role;
 import com.senac.justaposto.entities.User;
 import com.senac.justaposto.repositories.RoleRepository;
@@ -55,7 +56,7 @@ public class UserService {
 	}
 
 	@Transactional
-	public UserDTO update(Long id, UserDTO dto) {
+	public UserDTO update(Long id, UserUpdateDTO dto) {
 		//try {
 			User entity = repository.getReferenceById(id);
 			copyDtoToEntity(dto, entity);
