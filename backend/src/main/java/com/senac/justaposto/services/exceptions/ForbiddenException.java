@@ -1,9 +1,9 @@
 package com.senac.justaposto.services.exceptions;
 
-public class ResourceNotFoundException extends RuntimeException {
+public class ForbiddenException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
-	
-	public ResourceNotFoundException(String msg) {
+
+	public ForbiddenException(String msg) {
 		super(msg);
 	}
 }
