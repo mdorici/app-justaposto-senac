@@ -1,5 +1,5 @@
 ## <div align="center"> :car: Justaposto: Estética Automotiva :car: </div>
-<div align="center"><img src="https://cdn.discordapp.com/attachments/941457841829601294/1175795514734817330/Logo.png(https://media.discordapp.net/attachments/941457841829601294/1176370902544433192/Logotipo_Justaposto_2.png)?ex=656c87e7&is=655a12e7&hm=a2231380f7385ad0aa56c458b2009d5abe4897d58b4ce7621107a2d31a62bf94&" alt="drawing" height="300"/></div>
+<div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/Logo.png" alt="drawing" height="200"/></div>
 
 ## <div align="center"> :construction: Projeto em contrução :construction: </div>
 
