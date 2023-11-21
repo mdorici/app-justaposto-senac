@@ -14,6 +14,7 @@ import com.senac.justaposto.dto.CategoryDTO;
 import com.senac.justaposto.entities.Category;
 import com.senac.justaposto.repositories.CategoryRepository;
 //import com.senac.justaposto.services.exceptions.ResourceNotFoundException;
+import com.senac.justaposto.services.exceptions.ResourceNotFoundException;
 
 //import jakarta.persistence.EntityNotFoundException;
 
@@ -33,9 +34,8 @@ public class CategoryService {
 	@Transactional(readOnly = true)
 	public CategoryDTO findById(Long id) {
 		Optional<Category> obj = repository.findById(id);
-		Category entity = obj.get();
-		
-		return new CategoryDTO(entity);	
+		Category entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found with id: " + id));
+		return new CategoryDTO(entity); 
 	}
 
 	@Transactional
