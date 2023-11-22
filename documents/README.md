@@ -30,7 +30,7 @@ Para acessar o projeto e executá-lo adequadamente em sua máquina é preciso in
 ##  Configurando o Git e o Github
 ***Aprenda a configurar o Git e o Github na sua máquina:***
 <a href="https://www.youtube.com/playlist?list=PLNuUvBZGBA8nDTr8QRMgoT_l3XNt_BbWj">
-  <img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/5b43014c-697b-4b77-8e6f-76313520b77e" alt="Clique aqui" width="25">
+  <img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/5b43014c-697b-4b77-8e6f-76313520b77e" alt="Clique aqui" target="_blank" width="25">
 </a>
 
 ##  Executando o projeto na sua máquina:
