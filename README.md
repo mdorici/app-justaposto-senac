@@ -1,9 +1,12 @@
+
 ## <div align="center"> :car: Justaposto: Estética Automotiva :car: </div>
+
 <div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/Logo.png" alt="drawing" height="200"/></div>
 
-## <div align="center"> :construction: Projeto em contrução :construction: </div>
+<p align="center">
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
-##
 
 ## :computer: Descrição do projeto
 Nosso produto será uma aplicação web que busca atender e facilitar o atendimento às necessidades de uma empresa que fornece serviços de estética automotiva e lavagem de veículos sob demanda aos seus clientes. Visando a otimização do tempo do empreendedor no fornecimento dos serviços prestados e na gestão de horários, clientes e fluxo de caixa da empresa e também do cliente a partir do fornecimento de funcionalidades de agendamento e confirmação dos serviços demandados. Pretende-se dessa forma que a satisfação do cliente seja ampliada e o retorno lucrativo seja favorecido.
@@ -15,11 +18,17 @@ Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com a
 
 - Java JDK 17
 - Spring Boot
-- Data JPA
 - Banco de dados H2
-- Spring Boot Starter Web
-- PostgreSQL
+- Postman
+- Yarn/Npm
+- Git
+- SpringToolSuite4
+- VS Code
 
+ ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+ 
+ ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black)![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+ 
 ## :memo: Modelo conceitual
 
 Em desenvolvimento
