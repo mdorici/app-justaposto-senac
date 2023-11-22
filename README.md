@@ -31,7 +31,7 @@ Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com a
  
 ## :chart_with_upwards_trend: Modelo conceitual
 
-<div align="center"><img src="https://media.discordapp.net/attachments/941457841829601294/1176714372219940884/image.png?ex=656fdfa8&is=655d6aa8&hm=f3becc028d79408e8ce3a256c3260eaa50d9faf38635b551c281c14557480077&=&format=webp" alt="drawing" height="500"/></div>
+<div align="center"><img src="https://media.discordapp.net/attachments/941457841829601294/1176714372219940884/image.png?ex=656fdfa8&is=655d6aa8&hm=f3becc028d79408e8ce3a256c3260eaa50d9faf38635b551c281c14557480077&=&format=webp" alt="drawing" height="400"/></div>
 
 ## :memo: Endepoints
 - **Category**
