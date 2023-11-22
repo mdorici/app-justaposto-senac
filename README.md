@@ -29,13 +29,62 @@ Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com a
  
  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black)![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
  
-## :memo: Modelo conceitual
+## :chart_with_upwards_trend: Modelo conceitual
 
-Em desenvolvimento
+<div align="center"><img src="https://media.discordapp.net/attachments/941457841829601294/1176714372219940884/image.png?ex=656fdfa8&is=655d6aa8&hm=f3becc028d79408e8ce3a256c3260eaa50d9faf38635b551c281c14557480077&=&format=webp" alt="drawing" height="500"/></div>
+
+## :memo: Endepoints
+- **Category**
+
+   - **[GET] /categories:** Busca todas as categorias cadastradas no sistema.
+  
+   - **[GET] /categories/{id}:** Busca uma categoria pelo id.
+  
+   - **[POST] /categories:** Cadastra uma nova categoria ao sistema.
+  
+   - **[PUT] /categories/{id}:** Atualiza as informações de uma categoria pelo id.
+  
+   - **[DEL] /categories/{id}:** Deleta uma categoria pelo id.
+
+- **Product**
+
+   - **[GET] /products:** Busca todos os produtos cadastrados no sistema.
+  
+   - **[GET] /products/{id}:** Busca um produto pelo id.
+  
+   - **[POST] /products:** Cadastra um novo produto ao sistema.
+  
+   - **[PUT] /products/{id}:** Atualiza as informações de um produto pelo id.
+  
+   - **[DEL] /products/{id}:** Deleta um produto pelo id.
+
+- **User**
+
+   - **[GET] /users/me:** Permite que o usuário logado veja suas informações cadastradas.
+
+- **Auth**
+
+   - **[POST] /oauth/token:** Permite que qualquer usuário, com senha, acesse o sistema, retornando seu token de acesso.
 
 ## :lock: Informações de acesso
 
-Em desenvolvimento
+**Perfil Administrador (ROLE_ADM)**
+- Username: maria@gmail.com
+- Password: 123456
+
+**Perfil Cliente (ROLE_USER)**
+
+- Username: alex@gmail.com
+- Password: 123456
+
+## :100: Entrega básica
+
+- [x] Prova de conceito a ser desenvolvida ***1.0pts***
+- [x] Preparação do ambiente de desenvolvimento ***2.0pts***
+- [ ] Desenvolvimento Frontend ***2.0pts***
+- [x] Desenvolvimento Backend ***2.0pts***
+- [ ] Video de apresentação do projeto ***1.0pts***
+- [x] Repositório Github ***2.0pts***
 
 ## :rocket: Equipe de desenvolvimento:
 <table>
