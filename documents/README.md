@@ -73,3 +73,7 @@ git clone git@github.com:mdorici/pi-iv-senac-app-justaposto.git
 <a href="https://www.alura.com.br/artigos/clonando-repositorio-git-github?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=681736256289&hsa_src=g&hsa_tgt=aud-539280195004:dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMIyJW_htjWggMV-19IAB04ZAI2EAAYASAAEgLgl_D_BwE">
   <img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/85ab34fc-c8b9-41fe-9955-a99a2d92ce61" alt="Clique aqui" width="40">
 </a>
+
+## Configurando o ambiente do Postman
+
+<div align="center"><img src="https://media.discordapp.net/attachments/941457841829601294/1176964874849497139/image.png?ex=6570c8f5&is=655e53f5&hm=2bb2353f78204b8ed2f26fc8e5f3ab2fc0f7676a3b76e83ab84ec3912f82632c&=&format=webp" /></div>
