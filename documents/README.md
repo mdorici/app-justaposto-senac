@@ -30,7 +30,7 @@ Para acessar o projeto e executá-lo adequadamente em sua máquina é preciso in
 ##  Configurando o Git e o Github
 ***Aprenda a configurar o Git e o Github na sua máquina:***
 <a href="https://www.youtube.com/playlist?list=PLNuUvBZGBA8nDTr8QRMgoT_l3XNt_BbWj">
-  <img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/5b43014c-697b-4b77-8e6f-76313520b77e" alt="Clique aqui" target="_blank" width="25">
+  <img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/5b43014c-697b-4b77-8e6f-76313520b77e" alt="Clique aqui" width="25">
 </a>
 
 ##  Executando o projeto na sua máquina:
@@ -68,4 +68,8 @@ git clone git@github.com:mdorici/pi-iv-senac-app-justaposto.git
 ~~~    
     http://localhost:5173
 ~~~
-    
+
+***Para saber mais sobre a clonagem e execução do projeto acesse:*** 
+<a href="https://www.alura.com.br/artigos/clonando-repositorio-git-github?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=681736256289&hsa_src=g&hsa_tgt=aud-539280195004:dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMIyJW_htjWggMV-19IAB04ZAI2EAAYASAAEgLgl_D_BwE">
+  <img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/85ab34fc-c8b9-41fe-9955-a99a2d92ce61" alt="Clique aqui" width="40">
+</a>
