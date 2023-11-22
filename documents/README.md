@@ -1,6 +1,6 @@
-## <div align="center"> :car: Guia de execução do projeto :car: </div>
+## <div align="center"> :oncoming_automobile: Guia de execução do projeto :oncoming_automobile: </div>
 
-<div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/Logo.png" alt="drawing" height="200"/></div>
+<div align="center"><img src="https://media.discordapp.net/attachments/941457841829601294/1176746861126750238/image.png?ex=656ffdea&is=655d88ea&hm=022152cee64d73fda1fdc10fbb75338e6698811b5239109c0d9398d638dd1ecd&=&format=webp" alt="drawing" height="250"/></div>
 
 ##  Instalação de ferramentas
 
@@ -35,7 +35,7 @@ Para acessar o projeto e executá-lo adequadamente em sua máquina é preciso in
 
 ##  Executando o projeto na sua máquina:
 
-- **Passo 1:** Em uma pasta de sua escolha abra o GitBash e clone o projeto do repositório Github
+- **Passo 1:** Em uma pasta de sua escolha abra o **GitBash** e clone o projeto do repositório Github
   
     - Para clonar o repositório será preciso ter o **Git configurado** em sua máquina e copiar a ***chave ssh*** ou o ***link https*** do repositório para utilizar com o comando ***$ git clone***.
     - Aguarde a mensagem de sucesso da clonagem.
@@ -44,11 +44,11 @@ Para acessar o projeto e executá-lo adequadamente em sua máquina é preciso in
 git clone git@github.com:mdorici/pi-iv-senac-app-justaposto.git
 ~~~
 
-- **Passo 2:** Abra a pasta do backend no SpringToolSuite (STS) e aguarde a configuração do ambiente.
+- **Passo 2:** Abra a pasta do backend no **SpringToolSuite (STS)** e aguarde a configuração do ambiente.
     - Leva um tempo até que o projeto seja completamente carregado no STS. Após é possível realizar o start na aplicação e verificar se o projeto está sendo executado corretamente.
    
-- **Passo 3:** Abra o postman e import a collection com os endpoints do projeto
-    - Arraste a collection do repositório para a caixa de import.
+- **Passo 3:** Abra o **Postman** e ***Import a Collection*** com os endpoints do projeto
+    - Arraste a **Collection** do repositório para a caixa de import.
     - Concorde com o import e pronto, você terá os endpoints para testar a API.
 
 - **Passo 4:** Abra o frontend no **VS Code**. Acessando a pasta do frontend do repositório clonado, abra um terminal do **Gitbash** e digite o comando que abrirá o **VS Code** abrirá com o frontend do projeto:
