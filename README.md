@@ -86,6 +86,11 @@ Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com a
 - [ ] Video de apresentação do projeto ***1.0pts***
 - [x] Repositório Github ***2.0pts***
 
+***Acesse as informações de execução do projeto e mais detalhes na pasta documents*** 
+<a href="https://github.com/mdorici/pi-iv-senac-app-justaposto/tree/main/documents">
+  <img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/a6750c53-e326-44b3-8266-8bbed0f629a8" alt="Clique aqui" width="35">
+</a>
+
 ## :rocket: Equipe de desenvolvimento:
 <table>
  <tr>
