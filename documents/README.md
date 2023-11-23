@@ -63,7 +63,7 @@ git clone git@github.com:mdorici/pi-iv-senac-app-justaposto.git
     yarn
 ~~~
 ~~~    
-    yarn start
+    yarn dev
 ~~~
 
 - **Passo 6:** Abra um browser com a porta de execução do projeto:
