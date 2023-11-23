@@ -2,21 +2,21 @@ package com.senac.justaposto.services;
 
 import java.util.Optional;
 
+import javax.persistence.EntityNotFoundException;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-//import org.springframework.dao.DataIntegrityViolationException;
-//import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.senac.justaposto.dto.CategoryDTO;
 import com.senac.justaposto.entities.Category;
 import com.senac.justaposto.repositories.CategoryRepository;
-//import com.senac.justaposto.services.exceptions.ResourceNotFoundException;
+import com.senac.justaposto.services.exceptions.DatabaseException;
 import com.senac.justaposto.services.exceptions.ResourceNotFoundException;
-
-//import jakarta.persistence.EntityNotFoundException;
 
 @Service
 public class CategoryService {
@@ -49,28 +49,28 @@ public class CategoryService {
 
 	@Transactional
 	public CategoryDTO update(Long id, CategoryDTO dto) {
-		//try {
+		try {
 			Category entity = repository.getReferenceById(id);
 			entity.setName(dto.getName());
 			entity = repository.save(entity);
 			return new CategoryDTO(entity);
-		//}
-//		catch(EntityNotFoundException e) {
-//			throw new ResourceNotFoundException("Id not found " + id);
-//		}
+		}
+		catch(EntityNotFoundException e) {
+			throw new ResourceNotFoundException("Id not found " + id);
+		}
 			
 	}
 
 	public void delete(Long id) {
-//		try {
+		try {
 			repository.deleteById(id);
-//		}
-//		catch (EmptyResultDataAccessException e) {
-//			throw new ResourceNotFoundException("Id not found " + id);
-//		}
-//		catch (DataIntegrityViolationException) {
-//			throw new DatabaseException("Integrity violation");
-//		}
+		}
+		catch(EmptyResultDataAccessException e) {
+			throw new ResourceNotFoundException("Recurso não encontrado!");
+		}
+		catch(DataIntegrityViolationException e) {
+			throw new DatabaseException("Falha de integridade referencial!");
+		}
 	}
 		
 	

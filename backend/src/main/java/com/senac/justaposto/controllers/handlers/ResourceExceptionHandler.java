@@ -1,19 +1,22 @@
 package com.senac.justaposto.controllers.handlers;
 
 import java.time.Instant;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.MethodArgumentNotValidException;  // Adicione esta importação
-import com.senac.justaposto.services.exceptions.ResourceNotFoundException;
-import com.senac.justaposto.services.exceptions.DatabaseException;
-import org.springframework.validation.FieldError;
 
-import jakarta.servlet.http.HttpServletRequest;
+import com.senac.justaposto.services.exceptions.DatabaseException;
+import com.senac.justaposto.services.exceptions.ResourceNotFoundException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
+	
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<StandardError> entityNotFound(ResourceNotFoundException e, HttpServletRequest request) {
         HttpStatus status = HttpStatus.NOT_FOUND;
@@ -55,5 +58,4 @@ public class ResourceExceptionHandler {
         return ResponseEntity.status(status).body(err);
     }
 }
-
 

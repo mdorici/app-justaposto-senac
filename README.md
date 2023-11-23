@@ -1,9 +1,12 @@
+
 ## <div align="center"> :car: Justaposto: Estética Automotiva :car: </div>
-<div align="center"><img src="https://cdn.discordapp.com/attachments/941457841829601294/1175795514734817330/Logo.png(https://media.discordapp.net/attachments/941457841829601294/1176370902544433192/Logotipo_Justaposto_2.png)?ex=656c87e7&is=655a12e7&hm=a2231380f7385ad0aa56c458b2009d5abe4897d58b4ce7621107a2d31a62bf94&" alt="drawing" height="300"/></div>
 
-## <div align="center"> :construction: Projeto em contrução :construction: </div>
+<div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/Logo.png" alt="drawing" height="200"/></div>
 
-##
+<p align="center">
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
+
 
 ## :computer: Descrição do projeto
 Nosso produto será uma aplicação web que busca atender e facilitar o atendimento às necessidades de uma empresa que fornece serviços de estética automotiva e lavagem de veículos sob demanda aos seus clientes. Visando a otimização do tempo do empreendedor no fornecimento dos serviços prestados e na gestão de horários, clientes e fluxo de caixa da empresa e também do cliente a partir do fornecimento de funcionalidades de agendamento e confirmação dos serviços demandados. Pretende-se dessa forma que a satisfação do cliente seja ampliada e o retorno lucrativo seja favorecido.
@@ -15,18 +18,76 @@ Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com a
 
 - Java JDK 17
 - Spring Boot
-- Data JPA
 - Banco de dados H2
-- Spring Boot Starter Web
-- PostgreSQL
+- Postman
+- Yarn/Npm
+- Git
+- SpringToolSuite4
+- VS Code
 
-## :memo: Modelo conceitual
+ ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black)![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+ 
+## :chart_with_upwards_trend: Modelo conceitual
 
-Em desenvolvimento
+<div align="center"><img src="https://media.discordapp.net/attachments/941457841829601294/1176715433559207946/image.png?ex=656fe0a5&is=655d6ba5&hm=d5c985673f6a6a3d212450888ec4a9e639d8012a36d48f6e844844f71fa6151b&=&format=webp" alt="drawing" height="400"/></div>
+
+## :memo: Endepoints
+- **Category**
+
+   - **[GET] /categories:** Busca todas as categorias cadastradas no sistema.
+  
+   - **[GET] /categories/{id}:** Busca uma categoria pelo id.
+  
+   - **[POST] /categories:** Cadastra uma nova categoria ao sistema.
+  
+   - **[PUT] /categories/{id}:** Atualiza as informações de uma categoria pelo id.
+  
+   - **[DEL] /categories/{id}:** Deleta uma categoria pelo id.
+
+- **Product**
+
+   - **[GET] /products:** Busca todos os produtos cadastrados no sistema.
+  
+   - **[GET] /products/{id}:** Busca um produto pelo id.
+  
+   - **[POST] /products:** Cadastra um novo produto ao sistema.
+  
+   - **[PUT] /products/{id}:** Atualiza as informações de um produto pelo id.
+  
+   - **[DEL] /products/{id}:** Deleta um produto pelo id.
+
+- **User**
+
+   - **[GET] /users/me:** Permite que o usuário logado veja suas informações cadastradas.
+
+- **Auth**
+
+   - **[POST] /oauth/token:** Permite que qualquer usuário, com senha, acesse o sistema, retornando seu token de acesso.
 
 ## :lock: Informações de acesso
 
-Em desenvolvimento
+**Perfil Administrador (ROLE_ADM)**
+- Username: maria@gmail.com
+- Password: 123456
+
+**Perfil Cliente (ROLE_USER)**
+
+- Username: alex@gmail.com
+- Password: 123456
+
+## :100: Entrega básica
+
+- [x] Prova de conceito a ser desenvolvida ***1.0pts***
+- [x] Preparação do ambiente de desenvolvimento ***2.0pts***
+- [ ] Desenvolvimento Frontend ***2.0pts***
+- [x] Desenvolvimento Backend ***2.0pts***
+- [ ] Video de apresentação do projeto ***1.0pts***
+- [x] Repositório Github ***2.0pts***
+
+***Acesse as informações de execução do projeto e mais detalhes na pasta documents*** 
+<a href="https://github.com/mdorici/pi-iv-senac-app-justaposto/tree/main/documents">
+  <img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/a6750c53-e326-44b3-8266-8bbed0f629a8" alt="Clique aqui" width="35">
+</a>
 
 ## :rocket: Equipe de desenvolvimento:
 <table>

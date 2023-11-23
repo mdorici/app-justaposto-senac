@@ -9,10 +9,10 @@ import java.util.Set;
 import com.senac.justaposto.entities.Category;
 import com.senac.justaposto.entities.Product;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.PastOrPresent;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.Size;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.PastOrPresent;
+import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
 
 public class ProductDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
