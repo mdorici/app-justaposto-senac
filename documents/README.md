@@ -14,8 +14,6 @@ Para acessar o projeto e executá-lo adequadamente em sua máquina é preciso in
 
 - **Passo 4:** Instale o NodeJS e o gerenciador de pacotes Yarn
   
- **ATENÇÃO:** Para evitar  problemas com a versão utilizada no projeto talvez seja necessária a instalação do NodeJS versão 14.x.x
- 
   ~~~
           npm install --global yarn
   ~~~
