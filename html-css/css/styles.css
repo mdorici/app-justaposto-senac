@@ -1,0 +1,117 @@
+/* Barra de Navegação */
+nav {
+    background-color: #134264;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px; /* Ajuste o espaçamento conforme necessário */
+  }
+  
+  .logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  ul li {
+    margin: 0 20px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #a9bbc8;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  ul li.highlight a {
+    color: #ffffff;
+  }
+  
+  ul li a:hover {
+    color: #ffffff;
+  }
+  
+  /* Linha destacada */
+  ul li.highlight::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ddad66;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  /* Botão "Entrar" */
+  ul li.highlight a.login-button {
+    background-color: #eab568;
+    padding: 10px 20px;
+    border-radius: 5.62px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  /* Seção 1 - Home */
+#home {
+    background-color: #1c537a;
+    background-image: url('pi-iv-senac-app-justaposto/documents/img/mask-group.png');
+    background-position: center top;
+    background-size: cover;
+    padding-top: 200px; /* Ajuste conforme necessário */
+    padding-bottom: 100px; /* Ajuste conforme necessário */
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1062px;
+    margin: 0 auto;
+  }
+  
+  .left-column {
+    width: calc(50% - 45px);
+  }
+  
+  .left-column p {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  
+  .right-column {
+    width: calc(50% - 45px);
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-column img {
+    width: 100%;
+    max-width: 435px;
+    height: auto;
+  }
+  
+  .call-to-action {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .call-to-action a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
