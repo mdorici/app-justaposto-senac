@@ -24,7 +24,7 @@ describe('Product form create tests', () => {
         })
     });
 
-    test('should show toast and redirect when submit form correctly', async () => {
+    test('should show toast and Route when submit form correctly', async () => {
 
         render(
             <Router history={history}>
@@ -122,7 +122,7 @@ describe('Product form update tests', () => {
         })
     });
 
-    test('should show toast and redirect when submit form correctly', async () => {
+    test('should show toast and Route when submit form correctly', async () => {
 
         render(
             <Router history={history}>

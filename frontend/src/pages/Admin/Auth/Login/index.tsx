@@ -1,4 +1,4 @@
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ButtonIcon from '../../../../components/ButtonIcon';
 import { useForm } from 'react-hook-form';
 import { requestBackendLogin } from '../../../../util/requests';
@@ -14,23 +14,13 @@ type CredentialsDTO = {
   password: string;
 };
 
-type LocationState = {
-  from: string;
-}
-
 const Login = () => {
-
-  const location = useLocation<LocationState>();
-
-  const { from } = location.state || { from: { pathname: '/admin' } };
-
+  const navigate = useNavigate();
   const { setAuthContextData } = useContext(AuthContext);
 
   const [hasError, setHasError] = useState(false);
 
-  const { register, handleSubmit, formState: {errors} } = useForm<CredentialsDTO>();
-
-  const history = useHistory();
+  const { register, handleSubmit, formState: { errors } } = useForm<CredentialsDTO>();
 
   const onSubmit = (formData: CredentialsDTO) => {
     requestBackendLogin(formData)
@@ -40,8 +30,8 @@ const Login = () => {
         setAuthContextData({
           authenticated: true,
           tokenData: getTokenData(),
-        })
-        history.replace(from);
+        });
+        navigate('/admin'); // Use navigate ao invés de history.replace
       })
       .catch((error) => {
         setHasError(true);
@@ -62,8 +52,8 @@ const Login = () => {
               required: 'Campo obrigatório',
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: 'Email inválido'
-              }
+                message: 'Email inválido',
+              },
             })}
             type="text"
             className={`form-control base-input ${errors.username ? 'is-invalid' : ''}`}
@@ -75,7 +65,7 @@ const Login = () => {
         <div className="mb-2">
           <input
             {...register('password', {
-              required: 'Campo obrigatório'
+              required: 'Campo obrigatório',
             })}
             type="password"
             className={`form-control base-input ${errors.password ? 'is-invalid' : ''}`}

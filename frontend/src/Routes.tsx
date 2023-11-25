@@ -1,35 +1,26 @@
-import { Router, Switch, Route, Redirect } from 'react-router-dom';
-import Home from './pages/Home';
-import Navbar from './components/Navbar';
-import Catalog from './pages/Catalog';
-import Admin from './pages/Admin';
-import ProductDetails from './pages/ProductDetails';
-import Auth from '../src/pages/Admin/Auth';
-import history from 'util/history';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Catalog from "./pages/Catalog";
+import Admin from "./pages/Admin";
+import ProductDetails from "./pages/ProductDetails";
+import Auth from "../src/pages/Admin/Auth";
 
-const Routes = () => (
-  <Router history={history}>
+const AppRoutes = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/products" element={<Catalog />} />
+    <Route path="/products/:productId" element={<ProductDetails />} />
+    <Route path="/admin/auth" element={<Auth />} />
+    <Route path="/admin" element={<Admin />} />
+  </Routes>
+);
+
+const App = () => (
+  <Router>
     <Navbar />
-    <Switch>
-      <Route path="/">
-        <Home />
-      </Route>
-      <Route path="/products">
-        <Catalog />
-      </Route>
-      <Route path="/products/:productId">
-        <ProductDetails />
-      </Route>
-      <Redirect from="/admin/auth" to="/admin/auth/login" exact />
-      <Route path="/admin/auth" >
-        <Auth />
-      </Route>
-      <Redirect from="/admin" to="/admin/products" exact />
-      <Route path="/admin">
-        <Admin />
-      </Route>
-    </Switch>
+    <AppRoutes />
   </Router>
 );
 
-export default Routes;
+export default App;
