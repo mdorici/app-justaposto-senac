@@ -1,5 +1,6 @@
 import './styles.css';
-import 'bootstrap/js/src/collapse.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -39,8 +40,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary main-nav">
       <div className="container-fluid">
-        <Link to="/" className="nav-logo-text">
-          <h4>Justaposto: Estética automotiva</h4>
+        <Link to="/" className="nav-link">
+          <h4>JUSTAPOSTO</h4>
         </Link>
         <button
           className="navbar-toggler"
@@ -56,17 +57,17 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="dscatalog-navbar">
           <ul className="navbar-nav offset-md-2 main-menu">
             <li>
-              <NavLink to="/" className="active">
+              <NavLink to="/" className="nav-link">
                 HOME
               </NavLink>
             </li>
             <li>
-              <NavLink to="/products" className="active">
+              <NavLink to="/products" className="nav-link">
                 CATÁLOGO
               </NavLink>
             </li>
             <li>
-              <NavLink to="/admin" className="active">
+              <NavLink to="/admin" className="nav-link">
                 ADMIN
               </NavLink>
             </li>

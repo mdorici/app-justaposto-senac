@@ -4,9 +4,11 @@ import Catalog from './pages/Catalog';
 import Admin from './pages/Admin';
 import ProductDetails from './pages/ProductDetails';
 import Auth from './pages/Admin/Auth';
+import Navbar from './components/Navbar';
 
 const App = () => (
   <Router>
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Catalog />} />
