@@ -1,13 +1,11 @@
-import { AxiosRequestConfig } from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import CurrencyInput from 'react-currency-input-field';
 import { useForm, Controller } from 'react-hook-form';
-import { useHistory, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Select from 'react-select';
 import { Category } from 'types/category';
 import { Product } from 'types/product';
-import { requestBackend } from 'util/requests';
+import { requestBackend } from '../../../../util/request';
 import { toast } from 'react-toastify';
 
 import './styles.css';
@@ -21,7 +19,7 @@ const Form = () => {
 
   const isEditing = productId !== 'create';
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const [selectCategories, setSelectCategories] = useState<Category[]>([]);
 
@@ -59,7 +57,7 @@ const Form = () => {
       price: String(formData.price).replace(',', '.'),
     };
 
-    const config: AxiosRequestConfig = {
+    const config = {
       method: isEditing ? 'PUT' : 'POST',
       url: isEditing ? `/products/${productId}` : '/products',
       data,
@@ -67,17 +65,17 @@ const Form = () => {
     };
 
     requestBackend(config)
-    .then(() => {
-      toast.info('Produto cadastrado com sucesso');
-      history.push('/admin/products');
-    })
-    .catch(() => {
-      toast.error('Erro ao cadastrar produto');
-    });
+      .then(() => {
+        toast.info('Produto cadastrado com sucesso');
+        navigate('/admin/products');
+      })
+      .catch(() => {
+        toast.error('Erro ao cadastrar produto');
+      });
   };
 
   const handleCancel = () => {
-    history.push('/admin/products');
+    navigate('/admin/products');
   };
 
   return (
@@ -107,7 +105,9 @@ const Form = () => {
               </div>
 
               <div className="margin-bottom-30 ">
-                <label htmlFor="categories" className="d-none">Categorias</label>
+                <label htmlFor="categories" className="d-none">
+                  Categorias
+                </label>
                 <Controller
                   name="categories"
                   rules={{ required: true }}
@@ -134,22 +134,21 @@ const Form = () => {
               </div>
 
               <div className="margin-bottom-30">
-                <Controller
+                <input
+                  {...register('price', {
+                    required: 'Campo obrigatório',
+                    pattern: {
+                      value: /^\d+(\.\d{1,2})?$/,
+                      message: 'Formato inválido. Use somente números e até duas casas decimais.',
+                    },
+                  })}
+                  type="text"
+                  className={`form-control base-input ${
+                    errors.name ? 'is-invalid' : ''
+                  }`}
+                  placeholder="Preço"
                   name="price"
-                  rules={{ required: 'Campo obrigatório' }}
-                  control={control}
-                  render={({ field }) => (
-                    <CurrencyInput
-                      placeholder="Preço"
-                      className={`form-control base-input ${
-                        errors.name ? 'is-invalid' : ''
-                      }`}
-                      disableGroupSeparators={true}
-                      value={field.value}
-                      onValueChange={field.onChange}
-                      data-testid="price"
-                    />
-                  )}
+                  data-testid="price"
                 />
                 <div className="invalid-feedback d-block">
                   {errors.price?.message}
@@ -200,12 +199,16 @@ const Form = () => {
           </div>
           <div className="product-crud-buttons-container">
             <button
+              type="button"
               className="btn btn-outline-danger product-crud-button"
               onClick={handleCancel}
             >
               CANCELAR
             </button>
-            <button className="btn btn-primary product-crud-button text-white">
+            <button
+              type="submit"
+              className="btn btn-primary product-crud-button text-white"
+            >
               SALVAR
             </button>
           </div>

@@ -1,28 +1,26 @@
 import './styles.css';
 
-import ProductPrice from './../../../components/ProductPrice';
+import ProductPrice from '../../../../components/ProductPrice';
 import { Product } from '../../../../types/product';
 import CategoryBadge from '../CategoryBadge';
 import { Link } from 'react-router-dom';
 import { AxiosRequestConfig } from 'axios';
-import { requestBackend } from './../../../util/requests';
+import { requestBackend } from '../../../../util/request';
 
 type Props = {
   product: Product;
-  onDelete: Function;
+  onDelete: () => void; // Corrigido aqui para aceitar uma função sem argumentos
 };
 
 const ProductCrudCard = ({ product, onDelete }: Props) => {
-
-  const handleDelete = (productId: number) => {
-
+  const handleDelete = () => {
     if (!window.confirm("Tem certeza que deseja deletar?")) {
       return;
     }
 
     const config: AxiosRequestConfig = {
       method: 'DELETE',
-      url: `/products/${productId}`,
+      url: `/products/${product.id}`,
       withCredentials: true,
     };
 
@@ -49,7 +47,7 @@ const ProductCrudCard = ({ product, onDelete }: Props) => {
       </div>
       <div className="product-crud-card-buttons-container">
         <button
-          onClick={() => handleDelete(product.id)}
+          onClick={handleDelete} // Corrigido aqui para chamar handleDelete sem argumentos
           className="btn btn-outline-danger product-crud-card-button product-crud-card-button-first"
         >
           EXCLUIR

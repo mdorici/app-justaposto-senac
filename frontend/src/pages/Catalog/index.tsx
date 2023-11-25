@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Pagination from '../../components/Pagination';
 import { useState, useEffect } from 'react';
 import { SpringPage } from '../../types/vendor/spring';
-import { requestBackend } from '../../util/requests';
+import { requestBackend } from '../../util/request';
 import { AxiosRequestConfig } from 'axios';
 import CardLoader from './CardLoader';
 

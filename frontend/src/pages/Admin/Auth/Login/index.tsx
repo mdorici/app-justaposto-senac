@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import ButtonIcon from '../../../../components/ButtonIcon';
 import { useForm } from 'react-hook-form';
-import { requestBackendLogin } from '../../../../util/requests';
+import { requestBackendLogin } from '../../../../util/request';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../../../AuthContext';
 import { saveAuthData } from '../../../../util/storage';

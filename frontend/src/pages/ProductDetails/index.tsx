@@ -1,10 +1,10 @@
 import ArrowIcon from '../../assets/arrow.svg';
 import axios from 'axios';
-import ProductPrice from '../components/ProductPrice';
+import ProductPrice from '../../components/ProductPrice';
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Product } from '../../types/product';
-import { BASE_URL } from '../../util/requests';
+import { BASE_URL } from '../../util/request';
 import ProductInfoLoader from './ProductInfoLoader';
 import ProductDetailsLoader from './ProductDetailsLoader';
 

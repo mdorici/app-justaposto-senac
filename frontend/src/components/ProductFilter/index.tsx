@@ -1,9 +1,9 @@
-import { ReactComponent as SearchIcon } from 'assets/images/search-icon.svg';
+import SearchIcon from 'assets/images/search-icon.svg';
 import { useEffect, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import Select from 'react-select';
 import { Category } from 'types/category';
-import { requestBackend } from 'util/requests';
+import { requestBackend } from '../../util/request';
 
 import './styles.css';
 

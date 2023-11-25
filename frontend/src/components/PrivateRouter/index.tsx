@@ -1,4 +1,4 @@
-import { Route, Route } from 'react-router-dom';
+import { Route, Navigate } from 'react-router-dom';
 import { Role } from '../../types/role';
 import { hasAnyRoles, isAuthenticated } from '../../util/auth';
 
@@ -12,16 +12,11 @@ const PrivateRoute = ({ children, path, roles = [] }: Props) => {
   return (
     <Route
       path={path}
-      render={({ location }) =>
+      element={
         !isAuthenticated() ? (
-          <Route
-            to={{
-              pathname: '/admin/auth/login',
-              state: { from: location },
-            }}
-          />
+          <Navigate to="/admin/auth/login" />
         ) : !hasAnyRoles(roles) ? (
-          <Route to="/admin/products" />
+          <Navigate to="/admin/products" />
         ) : (
           children
         )
