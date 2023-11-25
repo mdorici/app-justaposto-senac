@@ -1,4 +1,4 @@
-import ArrowIcon from '../../assets/arrow.svg';
+import arrowIcon from '../../assets/arrow.svg';
 import axios from 'axios';
 import ProductPrice from '../../components/ProductPrice';
 import { useState, useEffect } from 'react';
@@ -37,7 +37,7 @@ const ProductDetails = () => {
       <div className="base-card product-details-card">
         <Link to="/products">
           <div className="goback-container">
-            <ArrowIcon />
+            <img src={arrowIcon} alt="arrow" />
             <h2>VOLTAR</h2>
           </div>
         </Link>

@@ -1,8 +1,8 @@
-import SearchIcon from 'assets/images/search-icon.svg';
+import searchIcon from '../../assets/search-icon.svg';
 import { useEffect, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import Select from 'react-select';
-import { Category } from 'types/category';
+import { Category } from '../../types/category';
 import { requestBackend } from '../../util/request';
 
 import './styles.css';
@@ -60,7 +60,7 @@ const ProductFilter = ({ onSubmitFilter }: Props) => {
             name="name"
           />
           <button className="product-filter-search-icon">
-            <SearchIcon />
+            <img src={searchIcon} alt="search" />
           </button>
         </div>
         <div className="product-filter-bottom-container">

@@ -1,94 +1,33 @@
-import { Link, useNavigate } from 'react-router-dom';
-import ButtonIcon from '../../../components/ButtonIcon';
-import { useForm } from 'react-hook-form';
-import { requestBackendLogin } from '../../../util/request';
-import { useContext, useState } from 'react';
-import { AuthContext } from 'AuthContext';
-import { saveAuthData } from '../../../util/storage';
-import { getTokenData } from '../../../util/token';
+import authImage from '../../../assets/auth-image.svg';
+import { Route } from 'react-router-dom';
+import Login from './Login';
 
 import './styles.css';
 
-type CredentialsDTO = {
-  username: string;
-  password: string;
-};
+const Auth = () => {
 
-const Login = () => {
-  const navigate = useNavigate();
-  const { setAuthContextData } = useContext(AuthContext);
-
-  const [hasError, setHasError] = useState(false);
-
-  const { register, handleSubmit, formState: { errors } } = useForm<CredentialsDTO>();
-
-  const onSubmit = (formData: CredentialsDTO) => {
-    requestBackendLogin(formData)
-      .then((response) => {
-        saveAuthData(response.data);
-        setHasError(false);
-        setAuthContextData({
-          authenticated: true,
-          tokenData: getTokenData(),
-        });
-        navigate('/admin'); // Use navigate ao invés de history.replace
-      })
-      .catch((error) => {
-        setHasError(true);
-        console.log('ERRO', error);
-      });
-  };
-
-  return (
-    <div className="base-card login-card">
-      <h1>LOGIN</h1>
-      {hasError && (
-        <div className="alert alert-danger">Erro ao tentar efetuar o login</div>
-      )}
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-4">
-          <input
-            {...register('username', {
-              required: 'Campo obrigatório',
-              pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: 'Email inválido',
-              },
-            })}
-            type="text"
-            className={`form-control base-input ${errors.username ? 'is-invalid' : ''}`}
-            placeholder="Email"
-            name="username"
-          />
-          <div className="invalid-feedback d-block">{errors.username?.message}</div>
+    return (
+        <div className="auth-container">
+            <div className="auth-banner-container">
+                <h1>Divulgue seus produtos no DS Catalog</h1>
+                <p>Faça parte do nosso catálogo de divulgação e aumente a venda dos seus produtos.</p>
+                <img src={authImage} alt="auth" />
+            </div>
+            <div className="auth-form-container">
+                <Route>
+                    <Route path="/admin/auth/login">
+                        <Login />
+                    </Route>
+                    <Route path="/admin/auth/signup">
+                        <h1>Card de Signup</h1>
+                    </Route>
+                    <Route path="/admin/auth/recover">
+                        <h1>Card de Recover</h1>
+                    </Route>
+                </Route>
+            </div>
         </div>
-        <div className="mb-2">
-          <input
-            {...register('password', {
-              required: 'Campo obrigatório',
-            })}
-            type="password"
-            className={`form-control base-input ${errors.password ? 'is-invalid' : ''}`}
-            placeholder="Password"
-            name="password"
-          />
-          <div className="invalid-feedback d-block">{errors.password?.message}</div>
-        </div>
-        <Link to="/admin/auth/recover" className="login-link-recover">
-          Esqueci a senha
-        </Link>
-        <div className="login-submit">
-          <ButtonIcon text="Fazer login" />
-        </div>
-        <div className="signup-container">
-          <span className="not-registered">Não tem Cadastro?</span>
-          <Link to="/admin/auth/register" className="login-link-register">
-            CADASTRAR
-          </Link>
-        </div>
-      </form>
-    </div>
-  );
-};
+    );
+}
 
-export default Login;
+export default Auth;

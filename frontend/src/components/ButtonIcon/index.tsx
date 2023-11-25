@@ -1,6 +1,6 @@
 import './styles.css';
 
-import ArrowIcon from 'assets/images/arrow.svg';
+import arrowIcon from "../../assets/arrow.svg";
 
 type Props = {
   text: string;
@@ -13,7 +13,7 @@ const ButtonIcon = ({ text } : Props) => {
         <h6>{text}</h6>
       </button>
       <div className="btn-icon-container">
-        <ArrowIcon data-testid="arrow" />
+        <img src={arrowIcon} alt="arrow" />
       </div>
     </div>
   );

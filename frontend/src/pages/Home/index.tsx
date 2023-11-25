@@ -1,4 +1,4 @@
-import MainImage from 'assets/images/main-image.svg';
+import mainImage from '../../assets/main-image.svg';
 import ButtonIcon from '../../components/ButtonIcon';
 import { Link } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home-image-container">
-          <MainImage />
+          <img src={mainImage} alt="main" />
         </div>
       </div>
     </div>

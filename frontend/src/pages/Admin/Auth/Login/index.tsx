@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import ButtonIcon from '../../../../components/ButtonIcon';
 import { useForm } from 'react-hook-form';
 import { requestBackendLogin } from '../../../../util/request';
@@ -15,12 +15,12 @@ type CredentialsDTO = {
 };
 
 const Login = () => {
-  const navigate = useNavigate();
   const { setAuthContextData } = useContext(AuthContext);
-
   const [hasError, setHasError] = useState(false);
-
   const { register, handleSubmit, formState: { errors } } = useForm<CredentialsDTO>();
+  
+  // Add useNavigate
+  const navigate = useNavigate();
 
   const onSubmit = (formData: CredentialsDTO) => {
     requestBackendLogin(formData)
@@ -31,7 +31,8 @@ const Login = () => {
           authenticated: true,
           tokenData: getTokenData(),
         });
-        navigate('/admin'); // Use navigate ao invés de history.replace
+        // useNavigate instead of history
+        navigate('/admin');
       })
       .catch((error) => {
         setHasError(true);
@@ -74,17 +75,18 @@ const Login = () => {
           />
           <div className="invalid-feedback d-block">{errors.password?.message}</div>
         </div>
-        <Link to="/admin/auth/recover" className="login-link-recover">
+        {/* NavLink instead of Link */}
+        <NavLink to="/admin/auth/recover" className="login-link-recover">
           Esqueci a senha
-        </Link>
+        </NavLink>
         <div className="login-submit">
           <ButtonIcon text="Fazer login" />
         </div>
         <div className="signup-container">
           <span className="not-registered">Não tem Cadastro?</span>
-          <Link to="/admin/auth/register" className="login-link-register">
+          <NavLink to="/admin/auth/register" className="login-link-register">
             CADASTRAR
-          </Link>
+          </NavLink>
         </div>
       </form>
     </div>
