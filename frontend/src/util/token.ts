@@ -1,6 +1,6 @@
-import jwtDecode from 'jwt-decode';
-import { Role } from 'types/role';
-import { getAuthData } from './storage';
+import jwtDecode from "jwt-decode";
+import { Role } from "../types/role";
+import { getAuthData } from "./storage";
 
 export type TokenData = {
   exp: number;

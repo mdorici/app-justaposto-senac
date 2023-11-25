@@ -3,12 +3,12 @@ import 'bootstrap/js/src/collapse.js';
 
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
-import history from 'util/history';
+import history from '../../util/history';
 import { useContext } from 'react';
-import { AuthContext } from 'AuthContext';
-import { isAuthenticated } from 'util/auth';
-import { removeAuthData } from 'util/storage';
-import { getTokenData } from 'util/token';
+import { AuthContext } from '../../AuthContext';
+import { isAuthenticated } from '../../util/auth';
+import { removeAuthData } from '../../util/storage';
+import { getTokenData } from '../../util/token';
 
 const Navbar = () => {
 
@@ -56,17 +56,17 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="dscatalog-navbar">
           <ul className="navbar-nav offset-md-2 main-menu">
             <li>
-              <NavLink to="/" activeClassName="active" exact>
+              <NavLink to="/" className="active">
                 HOME
               </NavLink>
             </li>
             <li>
-              <NavLink to="/products" activeClassName="active">
+              <NavLink to="/products" className="active">
                 CATÁLOGO
               </NavLink>
             </li>
             <li>
-              <NavLink to="/admin" activeClassName="active">
+              <NavLink to="/admin" className="active">
                 ADMIN
               </NavLink>
             </li>

@@ -1,8 +1,8 @@
-import { Role } from 'types/role';
-import { getTokenData } from './token';
+import { Role } from "../types/role";
+import { getTokenData } from "./token";
 
 export const isAuthenticated = (): boolean => {
-  let tokenData = getTokenData();
+  const tokenData = getTokenData();
   return tokenData && tokenData.exp * 1000 > Date.now() ? true : false;
 };
 
@@ -14,7 +14,7 @@ export const hasAnyRoles = (roles: Role[]): boolean => {
   const tokenData = getTokenData();
 
   if (tokenData !== undefined) {
-    for (var i = 0; i < roles.length; i++) {
+    for (let i = 0; i < roles.length; i++) {
       if (tokenData.authorities.includes(roles[i])) {
         return true;
       }
