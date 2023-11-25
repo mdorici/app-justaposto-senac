@@ -1,4 +1,4 @@
-import { redirect, Route } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 import { Role } from '../../types/role';
 import { hasAnyRoles, isAuthenticated } from '../../util/auth';
 
