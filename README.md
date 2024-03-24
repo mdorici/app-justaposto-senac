@@ -29,7 +29,7 @@ Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com a
  
 ## :chart_with_upwards_trend: Modelo conceitual
 
-<div align="center"><img src="https://media.discordapp.net/attachments/941457841829601294/1176715433559207946/image.png?ex=656fe0a5&is=655d6ba5&hm=d5c985673f6a6a3d212450888ec4a9e639d8012a36d48f6e844844f71fa6151b&=&format=webp" alt="drawing" height="400"/></div>
+<div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/modelo-conceitual.png" alt="drawing" height="400"/></div>
 
 ## :memo: Endepoints
 - **Category**
