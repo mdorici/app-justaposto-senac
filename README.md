@@ -1,7 +1,7 @@
 
 ## <div align="center"> :car: Justaposto: Estética Automotiva :car: </div>
 
-<div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/Logo.png" alt="drawing" height="200"/></div>
+<div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/logotipo-justaposto-2.png" alt="drawing" height="200"/></div>
 
 <p align="center">
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
