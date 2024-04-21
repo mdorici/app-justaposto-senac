@@ -12,7 +12,10 @@
 Nosso produto será uma aplicação web que busca atender e facilitar o atendimento às necessidades de uma empresa que fornece serviços de estética automotiva e lavagem de veículos sob demanda aos seus clientes. Visando a otimização do tempo do empreendedor no fornecimento dos serviços prestados e na gestão de horários, clientes e fluxo de caixa da empresa e também do cliente a partir do fornecimento de funcionalidades de agendamento e confirmação dos serviços demandados. Pretende-se dessa forma que a satisfação do cliente seja ampliada e o retorno lucrativo seja favorecido.
 
 ### :one: Primeira etapa do desenvolvimento:
-Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com as categorias de serviços oferecidos e seus respectivos produtos. Dessa forma o cliente poderá acessar a página da aplicação, realizar seu login e verificar o cátalogo de produtos oferecidos.
+Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com as categorias de serviços oferecidos e seus respectivos produtos. Dessa forma o cliente poderá acessar a página da aplicação, realizar seu login e verificar o cátalogo de produtos/serviços oferecidos.
+
+### 2️⃣: Segunda etapa do desenvolvimento:
+Na segunda etapa desse projeto focamos no desenvolvimento de uma área administrativa para que o gerente do sistema possa gerir os serviços e produtos oferecidos aos clientes, determinando sua categoria, preço, descrição e imagem. Dessa forma o cliente poderá acessar a página da aplicação, realizar seu login e verificar o cátalogo de produtos/serviços oferecidos e caso seja administrador poderá também cuidar da gestão dos mesmos.
 
 ## :hammer: Tecnologias e ferramentas
 
@@ -32,17 +35,14 @@ Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com a
 <div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/modelo-conceitual.png" alt="drawing" height="400"/></div>
 
 ## :memo: Endepoints
+- **Order**
+
+ - **[GET] /orders{id}:** Busca um pedido de serviços pelo id.
+ - **[POST] /orders:** Cadastra um novo pedido ao sistema.
+  
 - **Category**
 
    - **[GET] /categories:** Busca todas as categorias cadastradas no sistema.
-  
-   - **[GET] /categories/{id}:** Busca uma categoria pelo id.
-  
-   - **[POST] /categories:** Cadastra uma nova categoria ao sistema.
-  
-   - **[PUT] /categories/{id}:** Atualiza as informações de uma categoria pelo id.
-  
-   - **[DEL] /categories/{id}:** Deleta uma categoria pelo id.
 
 - **Product**
 
@@ -66,11 +66,11 @@ Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com a
 
 ## :lock: Informações de acesso
 
-**Perfil Administrador (ROLE_ADM)**
+**Perfil Administrador (ROLE_CLIENT)**
 - Username: maria@gmail.com
 - Password: 123456
 
-**Perfil Cliente (ROLE_USER)**
+**Perfil Cliente (ROLE_ADM)**
 
 - Username: alex@gmail.com
 - Password: 123456
@@ -89,7 +89,7 @@ Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com a
   <img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/assets/100785891/a6750c53-e326-44b3-8266-8bbed0f629a8" alt="Clique aqui" width="35">
 </a>
 
-## :rocket: Equipe de desenvolvimento:
+## :rocket: Equipe de desenvolvimento (Primeira etapa do desenvolvimento):
 <table>
  <tr>
 <td aling="center"><img src="https://avatars.githubusercontent.com/u/151584882?v=4" alt="drawing" height="100"/><br/>
@@ -121,3 +121,29 @@ Pedro Luan Dórea Melo<br />
 Thales R. T. Fernandes<br />
 <a href="https://github.com/thalesrochatf" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
  </tr>
+
+ ## :rocket: Equipe de desenvolvimento (Segunda etapa do desenvolvimento):
+<table>
+ <tr>
+<td aling="center"><img src="https://avatars.githubusercontent.com/u/151583448?v=4" alt="drawing" height="100"/><br/>
+Karina Duarte de Oliveira<br />
+<a href="https://github.com/karinaduarteo" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
+
+<td aling="center"><img src="https://avatars.githubusercontent.com/u/109982238?v=4" alt="drawing" height="100"/><br/>
+Mari C. de Oliveira<br />
+<a href="https://github.com/OliveiraMariC" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
+  </tr>
+  <tr>
+<td aling="center"><img src="https://avatars.githubusercontent.com/u/100785891?v=4" alt="drawing" height="100"/><br/>
+Mariana Dorici<br />
+<a href="https://github.com/mdorici" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
+
+<td aling="center"><img src="https://avatars.githubusercontent.com/u/104690518?v=4" alt="drawing" height="100"/><br/>
+Pedro Luan Dórea Melo<br />
+<a href="https://github.com/luandorea" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
+ 
+<td aling="center"><img src="https://avatars.githubusercontent.com/u/151583100?v=4" alt="drawing" height="100"/><br/>
+Thales R. T. Fernandes<br />
+<a href="https://github.com/thalesrochatf" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
+ </tr>
+
