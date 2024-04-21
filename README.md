@@ -14,7 +14,7 @@ Nosso produto será uma aplicação web que busca atender e facilitar o atendime
 ### :one: Primeira etapa do desenvolvimento:
 Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com as categorias de serviços oferecidos e seus respectivos produtos. Dessa forma o cliente poderá acessar a página da aplicação, realizar seu login e verificar o cátalogo de produtos/serviços oferecidos.
 
-### 2️⃣: Segunda etapa do desenvolvimento:
+### 2️⃣ Segunda etapa do desenvolvimento:
 Na segunda etapa desse projeto focamos no desenvolvimento de uma área administrativa para que o gerente do sistema possa gerir os serviços e produtos oferecidos aos clientes, determinando sua categoria, preço, descrição e imagem. Dessa forma o cliente poderá acessar a página da aplicação, realizar seu login e verificar o cátalogo de produtos/serviços oferecidos e caso seja administrador poderá também cuidar da gestão dos mesmos.
 
 ## :hammer: Tecnologias e ferramentas
@@ -37,8 +37,8 @@ Na segunda etapa desse projeto focamos no desenvolvimento de uma área administr
 ## :memo: Endepoints
 - **Order**
 
- - **[GET] /orders{id}:** Busca um pedido de serviços pelo id.
- - **[POST] /orders:** Cadastra um novo pedido ao sistema.
+  - **[GET] /orders{id}:** Busca um pedido de serviços pelo id.
+  - **[POST] /orders:** Cadastra um novo pedido ao sistema.
   
 - **Category**
 
@@ -121,8 +121,11 @@ Pedro Luan Dórea Melo<br />
 Thales R. T. Fernandes<br />
 <a href="https://github.com/thalesrochatf" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
  </tr>
+</table>
+ 
+##
 
- ## :rocket: Equipe de desenvolvimento (Segunda etapa do desenvolvimento):
+## :rocket: Equipe de desenvolvimento (Segunda etapa do desenvolvimento):
 <table>
  <tr>
 <td aling="center"><img src="https://avatars.githubusercontent.com/u/151583448?v=4" alt="drawing" height="100"/><br/>
@@ -132,8 +135,7 @@ Karina Duarte de Oliveira<br />
 <td aling="center"><img src="https://avatars.githubusercontent.com/u/109982238?v=4" alt="drawing" height="100"/><br/>
 Mari C. de Oliveira<br />
 <a href="https://github.com/OliveiraMariC" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
-  </tr>
-  <tr>
+  
 <td aling="center"><img src="https://avatars.githubusercontent.com/u/100785891?v=4" alt="drawing" height="100"/><br/>
 Mariana Dorici<br />
 <a href="https://github.com/mdorici" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
@@ -141,9 +143,11 @@ Mariana Dorici<br />
 <td aling="center"><img src="https://avatars.githubusercontent.com/u/104690518?v=4" alt="drawing" height="100"/><br/>
 Pedro Luan Dórea Melo<br />
 <a href="https://github.com/luandorea" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
+</tr>
+  <tr>
  
 <td aling="center"><img src="https://avatars.githubusercontent.com/u/151583100?v=4" alt="drawing" height="100"/><br/>
 Thales R. T. Fernandes<br />
 <a href="https://github.com/thalesrochatf" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" target="_blank"</a></td>
  </tr>
-
+</table>
