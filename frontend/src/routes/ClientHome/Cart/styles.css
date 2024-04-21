@@ -25,12 +25,14 @@
 
 .jp-cart-item-left {
     display: flex;
+    padding: 5px;
 }
 
 .jp-cart-item-quantity-container {
     font-size: 16px;
     font-weight: 700;
     display: flex;
+    margin-left: 10px;
 }
 
 .jp-cart-item-right {
@@ -41,7 +43,7 @@
 }
 
 .jp-cart-item-description {
-    padding: 10px 0;
+    padding: 10px;
     color: var(--jp-color-font-primary);
 }
 

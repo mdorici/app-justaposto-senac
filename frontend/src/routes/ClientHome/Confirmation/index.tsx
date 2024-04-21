@@ -49,7 +49,7 @@ export default function Confirmation() {
           </div>
         </div>
         <div className="jp-confirmation-message jp-mb20">
-          Pedido realizado! Número {order?.id}
+          Pedido realizado com sucesso! 
         </div>
         <div className="jp-btn-page-container">
           <Link to="/">

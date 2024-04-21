@@ -43,11 +43,11 @@ export default function ProductDetails() {
         {product && <ProductDetailsCard product={product} />}
         <div className="jp-btn-page-container">
           <div onClick={handleBuyClick}>
-            <ButtonPrimary text="Comprar" />
+            <ButtonPrimary text="Inserir no carrinho" />
           </div>
 
-          <Link to="/">
-            <ButtonInverse text="Início" />
+          <Link to="/catalog">
+            <ButtonInverse text="Voltar" />
           </Link>
         </div>
       </section>
