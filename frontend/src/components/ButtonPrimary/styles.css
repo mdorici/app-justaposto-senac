@@ -1,0 +1,5 @@
+.jp-btn-blue {
+    border: none;
+    background-color: var(--jp-color-btn-primary);
+    color: var(--jp-color-btn-inverse);
+  }

@@ -1,0 +1,25 @@
+.jp-catalog-card-top {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.jp-catalog-card-top img {
+    width: 150px;
+    height: 150px;
+}
+
+.jp-catalog-card-bottom {
+    padding: 10px 20px;
+    min-height: 110px;
+}
+
+.jp-catalog-card-bottom h3 {
+    color: var(--jp-color-font-secondary);
+    font-size: 20px;
+}
+
+.jp-catalog-card-bottom h4 {
+    color: var(--jp-color-font-primary);
+    font-size: 12px;
+}

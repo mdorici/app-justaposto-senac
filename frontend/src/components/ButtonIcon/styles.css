@@ -8,9 +8,10 @@
 }
 
 .btn h6 {
-  color: #fff;
+  color:var(--jpc-color-font-primary);
   font-size: 12px;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 .btn-icon-container {
@@ -20,8 +21,8 @@
   width: 50px;
   height: 50px;
   border-radius: 0px 10px 10px 0px;
-  background-color: #33569B;
-  color: #fff;
+  background-color: var(--jp-color-btn-primary);
+  color: var(--jp-color-font-secondary);
 }
 
 @media (min-width: 576px) {

@@ -1,0 +1,9 @@
+.jp-header-admin {
+    background-color: var(--jp-color-bg-quaternary);
+}
+
+.jp-img-logo img {
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+}
