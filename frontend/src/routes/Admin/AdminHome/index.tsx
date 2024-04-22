@@ -26,7 +26,6 @@ export default function AdminHome() {
             <div className="home-content-container">
               <div>
                 <h1>Seja bem vindo a área administrativa</h1>
-
                 <p>
                   Administre os produtos e serviços oferecidos aos seus
                   clientes.

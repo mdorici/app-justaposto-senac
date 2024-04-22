@@ -98,7 +98,7 @@ export default function ProductListing() {
 
         <div className="jp-btn-page-container jp-mb20">
           <div onClick={handleNewProductClick}>
-            <ButtonInverse text="Novo"/>
+            <ButtonInverse text="Novo cadastro"/>
           </div> 
         </div>
 

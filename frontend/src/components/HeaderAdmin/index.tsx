@@ -9,9 +9,7 @@ export default function HeaderAdmin() {
   return (
     <header className="jp-header-admin">
       <nav className="jp-container">
-        <div className="jp-img-logo">
-          <img src={logo} alt="Logo" />
-        </div> 
+        <img src={logo} alt="Logo" />
         <div className="jp-navbar-right">
           <div className="jp-menu-items-container">
             <NavLink to="/admin/home" className={({isActive}) => isActive ? "jp-menu-item-active" : ""}>

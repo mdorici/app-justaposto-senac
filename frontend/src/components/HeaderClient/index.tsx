@@ -14,11 +14,9 @@ export default function HeaderClient() {
   return (
     <header className="jp-header-client">
       <nav className="jp-container">
-        <div className="jp-img-logo">
-          <Link to="/">
-            <img src={logo} alt="Logo" />
-          </Link>
-        </div>
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
         <div className="jp-navbar-right">
           <div className="jp-menu-items-container">
             {contextTokenPayload && authService.hasAnyRoles(["ROLE_ADMIN"]) && (
