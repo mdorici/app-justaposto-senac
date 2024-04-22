@@ -1,6 +1,6 @@
 ## <div align="center"> :oncoming_automobile: Guia de execução do projeto :oncoming_automobile: </div>
 
-<div align="center"><img src="https://media.discordapp.net/attachments/941457841829601294/1176746861126750238/image.png?ex=656ffdea&is=655d88ea&hm=022152cee64d73fda1fdc10fbb75338e6698811b5239109c0d9398d638dd1ecd&=&format=webp" alt="drawing" height="250"/></div>
+<div align="center"><img src="https://github.com/mdorici/app-justaposto-senac/blob/main/documents/img/guia.png?raw=true" alt="drawing" height="250"/></div>
 
 ##  Instalação de ferramentas
 
@@ -79,4 +79,4 @@ git clone git@github.com:mdorici/pi-iv-senac-app-justaposto.git
 
 ## Configurando o ambiente do Postman
 
-<div align="center"><img src="https://media.discordapp.net/attachments/941457841829601294/1176964874849497139/image.png?ex=6570c8f5&is=655e53f5&hm=2bb2353f78204b8ed2f26fc8e5f3ab2fc0f7676a3b76e83ab84ec3912f82632c&=&format=webp" /></div>
+<div align="center"><img src="https://github.com/mdorici/app-justaposto-senac/blob/main/documents/img/postman-config.png?raw=true" /></div>
