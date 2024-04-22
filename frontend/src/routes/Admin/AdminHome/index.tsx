@@ -34,7 +34,7 @@ export default function AdminHome() {
               </div>
               <div className="btn h6">
                 <Link to="/catalog">
-                  <ButtonIcon text="Volte ao catálogo na área do cliente" />
+                  <ButtonIcon text="Volte ao catálogo" />
                 </Link>
               </div>
             </div>

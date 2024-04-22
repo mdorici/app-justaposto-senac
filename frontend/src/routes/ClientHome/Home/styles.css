@@ -128,7 +128,7 @@
 }
 
 @media (min-width: 1400px) {
-  .home-image-container {
+  .home-image-container svg {
     width: 480px;
   }
 }
