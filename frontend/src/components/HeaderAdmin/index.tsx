@@ -1,6 +1,6 @@
 import "./styles.css";
 import homeIcon from '../../assets/home.png';
-import logo from '../../assets/logotipo-justaposto-2.png';
+import logo from '../../assets/logotipo-branco.png';
 import productsIcon from '../../assets/products.png';
 import LoggedUser from "../LoggedUser";
 import { NavLink } from "react-router-dom";
@@ -8,8 +8,8 @@ import { NavLink } from "react-router-dom";
 export default function HeaderAdmin() {
   return (
     <header className="jp-header-admin">
-      <nav className="jp-container">
-        <img src={logo} alt="Logo" />
+      <nav className="jp-container"> 
+        <img style={{width: "80px", height: "50px"}} src={logo} alt="Logo" /> 
         <div className="jp-navbar-right">
           <div className="jp-menu-items-container">
             <NavLink to="/admin/home" className={({isActive}) => isActive ? "jp-menu-item-active" : ""}>

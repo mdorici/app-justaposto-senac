@@ -1,5 +1,5 @@
 import "./styles.css";
-import logo from "../../assets/logotipo-justaposto-2.png";
+import logo from "../../assets/logotipo-branco.png";
 import { Link } from "react-router-dom";
 import CartIcon from "../CartIcon";
 import iconAdmin from "../../assets/admin.png";
@@ -14,9 +14,11 @@ export default function HeaderClient() {
   return (
     <header className="jp-header-client">
       <nav className="jp-container">
-        <Link to="/">
-          <img src={logo} alt="Logo" />
-        </Link>
+        <div className="logo">
+          <Link to="/">
+            <img style={{width: "80px", height: "50px"}} src={logo} alt="Logo" />
+          </Link>
+        </div>
         <div className="jp-navbar-right">
           <div className="jp-menu-items-container">
             {contextTokenPayload && authService.hasAnyRoles(["ROLE_ADMIN"]) && (
