@@ -80,3 +80,30 @@ git clone git@github.com:mdorici/pi-iv-senac-app-justaposto.git
 ## Configurando o ambiente do Postman
 
 <div align="center"><img src="https://github.com/mdorici/app-justaposto-senac/blob/main/documents/img/postman-config.png?raw=true" /></div>
+
+## Bibliotecas & dependencias
+##
+**React Router:**
+~~~    
+    yarn add react-router-dom@6.4.1 @types/react-router-dom@5.3.3
+~~~
+**Axios:**
+~~~    
+   yarn add axios@0.27.2
+~~~
+**Biblioteca QS:**
+~~~    
+  yarn add qs@6.11.0 @types/qs@6.9.7
+~~~
+**Yarn History:**
+~~~    
+  yarn add history@5.3.0
+~~~
+**Jwt-decode:**
+~~~    
+  yarn add jwt-decode@3.1.2 @types/jwt-decode@3.1.0
+~~~
+**React Select:**
+~~~    
+  yarn add react-select@5.6.0
+~~~
