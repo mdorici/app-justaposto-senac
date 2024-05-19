@@ -14,8 +14,27 @@ Nosso produto será uma aplicação web que busca atender e facilitar o atendime
 ### :one: Primeira etapa do desenvolvimento:
 Na primeira etapa desse projeto focamos no desenvolvimento de um cátalogo com as categorias de serviços oferecidos e seus respectivos produtos. Dessa forma o cliente poderá acessar a página da aplicação, realizar seu login e verificar o cátalogo de produtos/serviços oferecidos.
 
+#### Funcionalidades:  
+- **Home page do cliente**
+- **Catalogo de produtos/serviços**
+- **Barra de busca**
+- **Detalhes dos produtos/serviços**
+- **Login**
+
 ### 2️⃣ Segunda etapa do desenvolvimento:
 Na segunda etapa desse projeto focamos no desenvolvimento de uma área administrativa para que o gerente do sistema possa gerir os serviços e produtos oferecidos aos clientes, determinando sua categoria, preço, descrição e imagem. Dessa forma o cliente poderá acessar a página da aplicação, realizar seu login e verificar o cátalogo de produtos/serviços oferecidos e caso seja administrador poderá também cuidar da gestão dos mesmos.
+
+#### Funcionalidades:  
+- **Home page área administrativa**
+- **Inserir produtos/serviços no carrinho de compras**
+- **Visualizar carrinho**
+- **Continuar comprando**
+- **Aumentar ou diminuir número de produtos/serviços inseridos no carrinho**
+- **Finalizar pedido**
+- **Lista de produtos/serviços oferecidos (para controle do administrador)**
+- **Deletar produtos/serviços cadastrados**
+- **Editar produtos/serviços cadastrados**
+- **Cadastrar novos produtos/serviços**
 
 ## :hammer: Tecnologias e ferramentas
 
