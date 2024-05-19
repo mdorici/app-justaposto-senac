@@ -51,7 +51,7 @@ Na segunda etapa desse projeto focamos no desenvolvimento de uma área administr
  
 ## :chart_with_upwards_trend: Modelo conceitual
 
-<div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/modelo-conceitual.png" alt="drawing" height="400"/></div>
+<div align="center"><img src="https://github.com/mdorici/pi-iv-senac-app-justaposto/blob/main/documents/img/modelo-conceitual2.png" alt="drawing" height="400"/></div>
 
 ## :memo: Endepoints
 - **Order**
