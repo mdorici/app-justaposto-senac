@@ -82,7 +82,7 @@ git clone git@github.com:mdorici/pi-iv-senac-app-justaposto.git
 <div align="center"><img src="https://github.com/mdorici/app-justaposto-senac/blob/main/documents/img/postman-config.png?raw=true" /></div>
 
 ## Bibliotecas & dependencias
-##
+
 **React Router:**
 ~~~    
     yarn add react-router-dom@6.4.1 @types/react-router-dom@5.3.3
