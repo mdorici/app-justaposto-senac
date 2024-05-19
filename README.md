@@ -98,7 +98,7 @@ Na segunda etapa desse projeto focamos no desenvolvimento de uma área administr
 
 - [x] Prova de conceito a ser desenvolvida ***1.0pts***
 - [x] Preparação do ambiente de desenvolvimento ***2.0pts***
-- [ ] Desenvolvimento Frontend ***2.0pts***
+- [x] Desenvolvimento Frontend ***2.0pts***
 - [x] Desenvolvimento Backend ***2.0pts***
 - [ ] Video de apresentação do projeto ***1.0pts***
 - [x] Repositório Github ***2.0pts***
