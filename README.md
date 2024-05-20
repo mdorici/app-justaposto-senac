@@ -100,8 +100,11 @@ Na segunda etapa desse projeto focamos no desenvolvimento de uma área administr
 - [x] Preparação do ambiente de desenvolvimento ***2.0pts***
 - [x] Desenvolvimento Frontend ***2.0pts***
 - [x] Desenvolvimento Backend ***2.0pts***
-- [ ] Video de apresentação do projeto ***1.0pts***
+- [x] Video de apresentação do projeto ***1.0pts***
 - [x] Repositório Github ***2.0pts***
+
+## :movie_camera: Video de apresentação do projeto
+[![Image]( "Vídeo no Youtube")](https://www.youtube.com/watch?v=Ng6v5grHerY)
 
 ***Acesse as informações de execução do projeto e mais detalhes na pasta documents*** 
 <a href="https://github.com/mdorici/pi-iv-senac-app-justaposto/tree/main/documents">
