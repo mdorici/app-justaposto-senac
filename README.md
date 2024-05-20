@@ -103,6 +103,10 @@ Na segunda etapa desse projeto focamos no desenvolvimento de uma área administr
 - [x] Video de apresentação do projeto ***1.0pts***
 - [x] Repositório Github ***2.0pts***
 
+## :movie_camera: Protótipo FIGMA
+
+[Visualizar protótipo no Figma](https://www.figma.com/design/LNMeAgVh6KHycDz3t7tLF4/Justaposto?node-id=0%3A1&t=qvttcOoVqmJRWnwY-1)
+
 ## :movie_camera: Video de apresentação do projeto
 
 [![Vídeo no Youtube](https://raw.githubusercontent.com/mdorici/app-justaposto-senac/main/documents/img/home.jpg)](https://www.youtube.com/watch?v=Ng6v5grHerY)
