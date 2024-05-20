@@ -43,6 +43,7 @@ Na segunda etapa desse projeto focamos no desenvolvimento de uma área administr
 - Banco de dados H2
 - Postman
 - Yarn/Npm
+- React
 - Git
 - SpringToolSuite4
 - VS Code
