@@ -104,7 +104,7 @@ Na segunda etapa desse projeto focamos no desenvolvimento de uma área administr
 - [x] Repositório Github ***2.0pts***
 
 ## :movie_camera: Video de apresentação do projeto
-[![Image]( "Vídeo no Youtube")](https://www.youtube.com/watch?v=Ng6v5grHerY)
+[![Image](https://github.com/mdorici/app-justaposto-senac/blob/main/documents/img/home.jpg "Vídeo no Youtube")](https://www.youtube.com/watch?v=Ng6v5grHerY)
 
 ***Acesse as informações de execução do projeto e mais detalhes na pasta documents*** 
 <a href="https://github.com/mdorici/pi-iv-senac-app-justaposto/tree/main/documents">
