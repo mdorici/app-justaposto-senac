@@ -105,9 +105,7 @@ Na segunda etapa desse projeto focamos no desenvolvimento de uma área administr
 
 ## :movie_camera: Video de apresentação do projeto
 
-<a href="https://www.youtube.com/watch?v=Ng6v5grHerY" target="_blank">
-  <img src="https://github.com/mdorici/app-justaposto-senac/blob/main/documents/img/home.jpg" alt="Vídeo no Youtube" title="Projeto Integrador: Justaposto - 2024 Senac SP">
-</a>
+[![Vídeo no Youtube](https://raw.githubusercontent.com/mdorici/app-justaposto-senac/main/documents/img/home.jpg)](https://www.youtube.com/watch?v=Ng6v5grHerY)
 
 
 ***Acesse as informações de execução do projeto e mais detalhes na pasta documents*** 
