@@ -110,7 +110,7 @@ Na segunda etapa desse projeto focamos no desenvolvimento de uma área administr
 
 ## :movie_camera: Video de apresentação do projeto
 
-[![Vídeo no Youtube](https://raw.githubusercontent.com/mdorici/app-justaposto-senac/main/documents/img/home.jpg)](https://www.youtube.com/watch?v=Ng6v5grHerY)
+[![Vídeo no Youtube](https://raw.githubusercontent.com/mdorici/app-justaposto-senac/main/documents/img/home.jpg)](https://www.youtube.com/watch?v=r7rtwxbK_8U)
 
 
 ***Acesse as informações de execução do projeto e mais detalhes na pasta documents*** 
